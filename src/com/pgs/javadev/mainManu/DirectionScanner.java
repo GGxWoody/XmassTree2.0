@@ -5,9 +5,9 @@ import com.pgs.javadev.messages.MASSAGES;
 
 import java.util.Scanner;
 
-public class DirectionScanner {
+class DirectionScanner {
 
-    public static String ScanDirection() {
+    static String ScanDirection() {
         Scanner inputString = new Scanner(System.in);
         System.out.println(MASSAGES.TREE_DIRECTION);
         String treeDirection = inputString.nextLine();

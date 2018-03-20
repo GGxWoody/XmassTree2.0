@@ -4,9 +4,9 @@ import com.pgs.javadev.interfaces.TreeDraw;
 import com.pgs.javadev.treeDirectionDraw.*;
 
 
-public class DecisionMaker {
+class DecisionMaker {
 
-    public static TreeDraw TreeToDraw(String treeDirection, int treeSize) {
+    static TreeDraw TreeToDraw(String treeDirection, int treeSize) {
         TreeDraw decisionTree;
         switch (treeDirection) {
             case "up":

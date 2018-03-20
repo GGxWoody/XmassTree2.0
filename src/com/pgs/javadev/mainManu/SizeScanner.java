@@ -5,9 +5,9 @@ import com.pgs.javadev.messages.MASSAGES;
 
 import java.util.Scanner;
 
-public class SizeScanner {
+class SizeScanner {
 
-    public static int TreeSize() {
+    static int TreeSize() {
         Scanner inputSize = new Scanner(System.in);
         System.out.println(MASSAGES.TREE_SIZE);
         String treeSize = inputSize.nextLine();
