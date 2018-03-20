@@ -1,7 +1,7 @@
 package com.pgs.javadev.treeDirectionDraw;
 
 
-public class CharDraw {
+class CharDraw {
 
     static void writeStars(int starsNumber) {
         for (int i = 0; i < starsNumber; i++) {
