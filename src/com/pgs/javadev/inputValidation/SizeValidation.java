@@ -12,6 +12,6 @@ public class SizeValidation {
     }
 
     public static boolean isNumberPositive(int treeSize) {
-        return (treeSize > 0);
+        return (treeSize > 0 && treeSize < 100);
     }
 }
