@@ -7,22 +7,23 @@ import com.pgs.javadev.treeDirectionDraw.*;
 public class DecisionMaker {
 
     public static TreeDraw TreeToDraw(String treeDirection, int treeSize) {
+        TreeDraw decisionTree;
         switch (treeDirection) {
             case "up":
-                TreeDraw upTree = new TreeUp(treeSize);
-                return upTree;
+                 decisionTree = new TreeUp(treeSize);
+                return decisionTree;
             case "down":
-                TreeDraw downTree = new TreeDown(treeSize);
-                return downTree;
+                decisionTree = new TreeDown(treeSize);
+                return decisionTree;
             case "left":
-                TreeDraw leftTree = new TreeLeft(treeSize);
-                return leftTree;
+                decisionTree = new TreeLeft(treeSize);
+                return decisionTree;
             case "right":
-                TreeDraw rightTree = new TreeRight(treeSize);
-                return rightTree;
+                decisionTree = new TreeRight(treeSize);
+                return decisionTree;
             default:
-                TreeDraw defaultTree = new TreeUp(treeSize);
-                return defaultTree;
+                decisionTree = new TreeUp(treeSize);
+                return decisionTree;
 
         }
     }

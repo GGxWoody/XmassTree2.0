@@ -4,7 +4,7 @@ public class SizeValidation {
     public static boolean isSizeCorrect(String treeSize) {
         int i = 0;
         for (char digit : treeSize.toCharArray()) {
-            if (Character.isDigit(digit) || treeSize.charAt(0)=='-') {
+            if (Character.isDigit(digit) || treeSize.charAt(0) == '-') {
                 i++;
             }
         }
