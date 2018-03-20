@@ -8,18 +8,10 @@ public class SizeValidation {
                 i++;
             }
         }
-        if (i == treeSize.length()) {
-            return true;
-        } else {
-            return false;
-        }
+        return (i == treeSize.length());
     }
 
     public static boolean isNumberPositive(int treeSize) {
-        if (treeSize > 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return (treeSize > 0);
     }
 }
