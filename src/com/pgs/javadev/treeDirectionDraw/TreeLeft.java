@@ -10,9 +10,8 @@ public class TreeLeft implements TreeDraw {
     }
 
     public void drawTree() {
-        for (int i = 0; i < this.treeSize * 2 + 1; i++) {
+        for (int i = 0; i <= this.treeSize * 2; i++) {
             drawLine(i);
-            CharDraw.endLine();
         }
     }
 
@@ -20,9 +19,11 @@ public class TreeLeft implements TreeDraw {
         if (lineNumber <= this.treeSize) {
             CharDraw.writeSpaces(this.treeSize - lineNumber);
             CharDraw.writeStars(lineNumber);
+            CharDraw.endLine();
         } else {
             CharDraw.writeSpaces(lineNumber - this.treeSize);
-            CharDraw.writeStars((this.treeSize * 2 + 1) - lineNumber - 1);
+            CharDraw.writeStars((this.treeSize * 2 + 1) - ++lineNumber);
+            CharDraw.endLine();
         }
     }
 }

@@ -10,17 +10,18 @@ public class TreeRight implements TreeDraw {
     }
 
     public void drawTree() {
-        for (int i = 0; i < this.treeSize * 2 + 1; i++) {
+        for (int i = 0; i <= this.treeSize * 2; i++) {
             drawLine(i);
-            CharDraw.endLine();
         }
     }
 
     public void drawLine(int lineNumber) {
         if (lineNumber <= this.treeSize) {
             CharDraw.writeStars(lineNumber);
+            CharDraw.endLine();
         } else {
-            CharDraw.writeStars((this.treeSize * 2 + 1) - lineNumber - 1);
+            CharDraw.writeStars((this.treeSize * 2 + 1) - ++lineNumber);
+            CharDraw.endLine();
         }
     }
 }
