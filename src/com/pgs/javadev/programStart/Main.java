@@ -5,6 +5,6 @@ import com.pgs.javadev.mainManu.Menu;
 
 public class Main {
     public static void main(String[] args) {
-        Menu.StartProgram();
+        Menu.StartProgram(); // Start Program
     }
 }
