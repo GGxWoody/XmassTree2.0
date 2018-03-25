@@ -3,7 +3,7 @@ package com.pgs.javadev.inputValidation;
 public class DirectionValidation {
 
     public static Boolean isDirectionCorrect(String treeDirection) {
-        switch (treeDirection.toLowerCase()) {
+        switch (treeDirection.toLowerCase().trim()) {
             case "up":
                 return true;
             case "down":
@@ -16,5 +16,4 @@ public class DirectionValidation {
                 return false;
         }
     }
-
 }
